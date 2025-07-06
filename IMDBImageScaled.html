@@ -1,0 +1,11 @@
+<!-- hosted at: https://your-site.net/showimage.html -->
+<html>
+  <body style="margin:0;padding:0;background:black;">
+    <img id="img" style="width:100%;height:100%;object-fit:contain;" />
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const img = params.get("img");
+      document.getElementById("img").src = decodeURIComponent(img);
+    </script>
+  </body>
+</html>
